@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Dasboard</title>
 </head>
@@ -12,15 +15,121 @@
     <section>
 
         <div class="menu">
+            <div class="menu_wrapper">
+                <div class="Logo__wrapper">
+                    <div class="logo__img">
+                        <img src="./img/icons/other/logo.svg" alt="logo">
+                    </div>
+                    <p class="logo__text">EasyPay</p>
+                </div>
+            </div>
             
+
+            <div class="main__menu">
+                <p>Main Menu</p>
+                <div class="list__block">
+                    <ul class="list__menu">
+                        <li class="list__item1">Dashboard</li>
+                        <li class="list__item2">Transactions</li>
+                        <li class="list__item3">Transfer</li>
+                        <li class="list__item4">Deposit</li>
+                        <li class="list__item5">Withdraw</li>
+                        <li class="list__item6">Payments</li>
+                        <li class="list__item7">Messages</li>
+                    </ul>
+                    <ul class="list__setting">
+                        <li class="setting__item1">Account</li>
+                        <li class="setting__item2">Settings</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div class="main">
             
+            <div class="main__user">
+                <div class="block__user">
+                    <p>Welcome Back!</p>
+                    <p>Ricardo Thompson</p>
+                </div>
+                <div class="search__input">
+                    <label for=""></label>
+                    <input class="search__transactions" type="text" placeholder="Search transactions...">
+                </div>
+            </div>
+
+            <div class="main__balance">
+                <h2>Total Balance</h2>
+                <p class="balance__text">USDC Balance <img src="./img/icons/other/nav_arrov-gray.svg" alt="nav_arrov-gray"></p>
+                <p class="balance__wallet">54,819.74 <span>USDC</span></p>
+                <p class="wallet__id">Wallet ID: 2QVT7C0LOWEJ</p>
+                <div>
+                    <button class="btn__deposit">Deposit</button>
+                    <button class="btn__withdraw">Withdraw</button>
+                </div>
+            </div>
+
+            <div class="transactions__wrapper">
+                <div class="transactions__text">
+                    <p>Recent Transactions</p>
+                    <p>View All<img src="./img/icons/other/nav_arrov-gray.svg" alt="nav_arrov-gray"></p>
+                </div>
+                <table class="transactions__table">
+
+                </table>
+            </div>
+
         </div>
 
-        <div class="balance">
+        <div class="wallet__info">
+            <div class="wallet__card">
+                <p class="card__name">Ricardo Thompson</p>
+                <div class="card__info">
+                    <p class="card__number">4756 **** **** 9018</p>
+                    <p class="card__data">12/25</p>
+                </div>
+            </div>
 
+            <div class="quick__transfer">
+                <p class="quick__text">Quick Transfer <img src="./img/icons/other/point.svg" alt="point"></p>
+                <p class="quick__id">573489534789 <img src="./img/icons/other/shield.svg" alt="shield"></p>
+                <div class="summ_wrapper">
+                    <p class="summ__transactions">356.87</p>
+                    <div class="choice-currency">
+                        <div>
+                            <p class="currency__text">Currency</p>
+                            <p class="currency__click">USDC</p>
+                        </div>
+                        <img src="./img/icons/other/nav_arrov-gray.svg" alt="nav_arrov-gray">
+                    </div>
+                    <div class="btn__transfer">
+                        <button class="btn__submit">Submit</button>
+                        <button class="btn__save">Save this address</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="transfers__history">
+                <h3>Transfers</h3>
+                <div>
+                    <p>Scheduled Transfers</p>
+                    <p>View All <img src="./img/icons/other/nav_arrov-gray.svg" alt="nav_arrov-gray"></p>
+                </div>
+                <div class="transfers__item">
+                    <div class="transfers__info-history">
+                        <p class="transfers__id">L05PL0PE0ZCV</p>
+                        <p class="transfers__data">May 23, 2022 at 06:25 am</p>
+                    </div>
+                    <p class="transfers__summ-history">- $754.90</p>
+                </div>
+                <div class="transfers__item">
+                    <div class="transfers__info-history">
+                        <p class="transfers__id">LCFYO7IA2ILF</p>
+                        <p class="transfers__data">May 15, 2022 at 11:00 pm</p>
+                    </div>
+                    <p class="transfers__summ-history">- $223.00</p>
+                </div>
+            </div>
         </div>
 
     </section>

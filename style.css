@@ -13,26 +13,242 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(41, 41, 41);
-    font-family: "Roboto", sans-serif;
+    font-family: 'Lexend', sans-serif;    
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #1C1D21;
 }
 
 section {
+    width: 100%;
+    max-width: 1440px;
     border: 3px solid skyblue;
-    min-width: 800px;
+    background-color: #fff;
+    display: flex;
+    gap: 40px;
+    margin: 150px 30px 50px 30px;
+    padding: 32px;
 }
 
 .menu {
-    border: 3px solid red;
+    width: 100%;
+    max-width: 268px;
+    border: 2px solid red;
+    border-radius: 30px;
+    background: #1C1D21;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
 }
+.menu_wrapper {
+    
+}
+
+.logo__img {
+
+}
+
+.Logo__wrapper {
+    border: 2px solid rgb(34, 76, 139);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 39px 32px;
+}
+
+.logo__text {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.main__menu {
+    border: 3px solid forestgreen;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__menu > p {
+    margin-left: 33px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.list__block {
+    border: 2px solid fuchsia;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 16px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 10px 0px 14px 14px;
+    cursor: pointer;
+    display: flex;
+
+}
+li:active {
+    background-color: #0066FE;
+    border-radius: 10px;
+    transform: scale(0.98);
+    transition: 0.1s;
+}
+
+li::before {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.list__item1::before{
+    background-image: url("./img/icons/sidebar/category.svg");
+}
+
+.list__item2::before {
+    background-image: url("./img/icons/sidebar/chart.svg");
+}
+
+.list__item3::before {
+    background-image: url("./img/icons/sidebar/send.svg");
+}
+
+.list__item4::before {
+    background-image: url("./img/icons/sidebar/plus.svg");
+}
+
+.list__item5::before {
+    background-image: url("./img/icons/sidebar/upload.svg");
+}
+
+.list__item6::before {
+    background-image: url("./img/icons/sidebar/wallet.svg");
+}
+
+.list__item7::before {
+    background-image: url("./img/icons/sidebar/paper.svg");
+}
+
+.list__setting {
+    margin-bottom: 54px;
+}
+.setting__item1::before {
+    background-image: url("./img/icons/sidebar/profile.svg");
+}
+
+.setting__item2::before {
+    background-image: url("./img/icons/sidebar/setting.svg");
+}
+
+
+
+
+
+
+
+
 
 .main {
-    border: 3px solid red;
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid red;
+
 }
 
-.balance {
-    border: 3px solid red;
+.wallet__info {
+    width: 100%;
+    max-width: 390px;
+    border: 2px solid red;
 }
+
+
+
+
+
+.main {}
+
+.main__user {}
+
+.block__user {}
+
+.search__input {}
+
+.search__transactions {}
+
+.main__balance {}
+
+.balance__text {}
+
+.balance__wallet {}
+
+.wallet__id {}
+
+.btn__deposit {}
+
+.btn__withdraw {}
+
+.transactions__wrapper {}
+
+.transactions__text {}
+
+.transactions__table {}
+
+.wallet__info {}
+
+.wallet__card {}
+
+.card__name {}
+
+.card__info {}
+
+.card__number {}
+
+.card__data {}
+
+.quick__transfer {}
+
+.quick__text {}
+
+.quick__id {}
+
+.summ_wrapper {}
+
+.summ__transactions {}
+
+.choice-currency {}
+
+.currency__text {}
+
+.currency__click {}
+
+.btn__transfer {}
+
+.btn__submit {}
+
+.btn__save {}
+
+.transfers__history {}
+
+.transfers__item {}
+
+.transfers__info-history {}
+
+.transfers__id {}
+
+.transfers__data {}
+
+.transfers__summ-history {}
