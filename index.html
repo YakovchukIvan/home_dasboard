@@ -58,7 +58,7 @@
 
             <div class="main__balance">
                 <h2>Total Balance</h2>
-                <p class="balance__text">USDC Balance <img src="./img/icons/other/nav_arrov-gray.svg" alt="nav_arrov-gray"></p>
+                <div><span class="balance__text">USDC Balance</span><img class="balance__arr" src="./img/icons/other/nav_arrov-gray.svg" alt="nav_arrov-gray"></div>
                 <p class="balance__wallet">54,819.74 <span>USDC</span></p>
                 <p class="wallet__id">Wallet ID: 2QVT7C0LOWEJ</p>
                 <div>
@@ -72,34 +72,118 @@
                     <p>Recent Transactions</p>
                     <p>View All<img src="./img/icons/other/nav_arrov-gray.svg" alt="nav_arrov-gray"></p>
                 </div>
-                <table class="transactions__table">
+                 
+                <div class="table">
+                    <div class="table__head">
+                        <p>Wallet ID</p>
+                        <p>Date</p>
+                        <p>Amount</p>
+                        <p>Status</p>
+                    </div>
+                    <hr>
+                    <div class="table__body">
+                        <div class="item__table">
+                            <p class="table__span-text">
+                                <span>DY04210S0XA5</span>
+                                <span>Hash: 2111853732263042</span>
+                            </p>
+                            <p>May 23, 2022</p>
+                            <p>$250.00</p>
+                            <p class="table__text-color">Completed</p>
+                        </div>
+                        <hr>
+                        <div class="item__table">
+                            <p class="table__span-text">
+                                <span>DY04210S0XA5</span>
+                                <span>Hash: 2111853732263042</span>
+                            </p>
+                            <p>May 19, 2022</p>
+                            <p>$980.00</p>
+                            <p class="table__text-color">Completed</p>
+                        </div>
+                        <hr>
+                        <div class="item__table">
+                            <p class="table__span-text">
+                                <span>JV72FR6TIL1S</span>
+                                <span>Hash: 1555845473775037</span>
+                            </p>
+                            <p>May 15, 2022</p>
+                            <p>$290.00</p>
+                            <p class="table__text-color">Failed</p>
+                        </div>
+                    </div>
+                </div>
 
-                </table>
+                <!-- <table  cellspacing="3" cellpadding="2" class="transactions__table">
+                    <thead>
+                        <tr>
+                            <th class="table__title1">Wallet ID</th>
+                            <th class="table__title2">Date</th>
+                            <th class="table__title3">Amount</th>
+                            <th class="table__title4">Status</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr >
+                            <td class="td__span">
+                                <span>DY04210S0XA5</span>
+                                <span>Hash: 2111853732263042</span>
+                            </td>
+                            <td>May 23, 2022</td>
+                            <td>$250.00</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td class="td__span">
+                                <span>PILMA81KS4JA</span>
+                                <span>Hash: 0348408522616817</span>
+                            </td>
+                            <td>May 19, 2022</td>
+                            <td>$980.00</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr class="test2">
+                            <td class="td__span">
+                                <span>JV72FR6TIL1S</span>
+                                <span>Hash: 1555845473775037</span>
+                            </td>
+                            <td>May 15, 2022</td>
+                            <td>$290.00</td>
+                            <td>Failed</td>
+                        </tr>
+                    </tbody>
+                </table> -->
             </div>
 
         </div>
 
+        <hr>
+
         <div class="wallet__info">
             <div class="wallet__card">
-                <p class="card__name">Ricardo Thompson</p>
+                <!-- <p class="card__name">Ricardo Thompson</p>
                 <div class="card__info">
                     <p class="card__number">4756 **** **** 9018</p>
                     <p class="card__data">12/25</p>
-                </div>
+                </div> -->
             </div>
 
             <div class="quick__transfer">
                 <p class="quick__text">Quick Transfer <img src="./img/icons/other/point.svg" alt="point"></p>
                 <p class="quick__id">573489534789 <img src="./img/icons/other/shield.svg" alt="shield"></p>
                 <div class="summ_wrapper">
-                    <p class="summ__transactions">356.87</p>
-                    <div class="choice-currency">
-                        <div>
-                            <p class="currency__text">Currency</p>
-                            <p class="currency__click">USDC</p>
+                    <div>
+                        <p class="summ__transactions">356.87</p>
+                        <div class="choice-currency">
+                            <div>
+                                <p class="currency__text">Currency</p>
+                                <p class="currency__click">USDC</p>
+                            </div>
+                            <img src="./img/icons/other/nav_arrov-gray.svg" alt="nav_arrov-gray">
                         </div>
-                        <img src="./img/icons/other/nav_arrov-gray.svg" alt="nav_arrov-gray">
                     </div>
+
                     <div class="btn__transfer">
                         <button class="btn__submit">Submit</button>
                         <button class="btn__save">Save this address</button>
@@ -109,7 +193,7 @@
 
             <div class="transfers__history">
                 <h3>Transfers</h3>
-                <div>
+                <div class="transfers__text">
                     <p>Scheduled Transfers</p>
                     <p>View All <img src="./img/icons/other/nav_arrov-gray.svg" alt="nav_arrov-gray"></p>
                 </div>
@@ -120,6 +204,7 @@
                     </div>
                     <p class="transfers__summ-history">- $754.90</p>
                 </div>
+                <hr>
                 <div class="transfers__item">
                     <div class="transfers__info-history">
                         <p class="transfers__id">LCFYO7IA2ILF</p>
