@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(41, 41, 41);
-    font-family: 'Lexend', sans-serif;    
+    font-family: 'Lexend', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ section {
     background-color: #fff;
     display: flex;
     gap: 40px;
-    margin: 50px 30px 50px 30px;
+    margin: 10px 30px 50px 30px;
     padding: 32px;
 }
 
@@ -64,9 +64,10 @@ section {
     padding: 0;
 }
 
-.logo__link:hover > .logo__text {
+.logo__link:hover>.logo__text {
     opacity: 0.8;
 }
+
 .logo__link:active>.logo__text {
     opacity: 1;
 }
@@ -78,7 +79,7 @@ section {
     flex-direction: column;
 }
 
-.main__menu > p {
+.main__menu>p {
     margin-left: 33px;
     font-size: 14px;
     line-height: 22px;
@@ -105,12 +106,14 @@ li {
     display: flex;
     position: relative;
 }
+
 li:hover {
     background-color: #0066FE;
     border-radius: 10px;
     transform: scale(0.98);
     transition: 0.1s;
 }
+
 li:active {
     transform: scale(1);
 }
@@ -123,7 +126,7 @@ li:active {
     right: 20px;
 }
 
-li:hover > .arrow_right {
+li:hover>.arrow_right {
     border: 2px solid #F5F6F8;
 }
 
@@ -138,7 +141,7 @@ li::before {
     background-repeat: no-repeat;
 }
 
-.list__item1::before{
+.list__item1::before {
     background-image: url("./img/icons/sidebar/category.svg");
 }
 
@@ -169,6 +172,7 @@ li::before {
 .list__setting {
     margin-bottom: 54px;
 }
+
 .setting__item1::before {
     background-image: url("./img/icons/sidebar/profile.svg");
 }
@@ -186,11 +190,9 @@ li::before {
 .main {
     width: 100%;
     max-width: 600px;
-    border: 2px solid red;
 }
 
 .main__user {
-    /* border: 2px solid rgb(255, 166, 0); */
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -198,19 +200,19 @@ li::before {
 }
 
 .block__user {
-    /* border: 2px solid rgb(166, 255, 0); */
     width: 100%;
     min-width: 150px;
 }
 
-.block__user > p:nth-child(1) {
+.block__user>p:nth-child(1) {
     font-size: clamp(0.75rem, 0.607rem + 0.71vw, 1.25rem);
     font-weight: 600;
     line-height: 26px;
     color: #1C1D21;
     margin: 0;
 }
-.block__user> p:nth-child(2) {
+
+.block__user>p:nth-child(2) {
     font-size: clamp(0.625rem, 0.518rem + 0.54vw, 1rem);
     font-weight: 400;
     line-height: 26px;
@@ -218,9 +220,8 @@ li::before {
     opacity: 0.4;
     margin: 0;
 }
-   
+
 .search__input {
-    /* border: 2px solid rgb(166, 255, 0); */
     align-self: center;
     position: relative;
 }
@@ -228,7 +229,6 @@ li::before {
 .search__transactions {
     max-width: 275px;
     border: none;
-    /* border: 2px solid rgb(0, 89, 255); */
     background: #F3F5F9;
     font-size: 16px;
     opacity: 0.6;
@@ -237,7 +237,7 @@ li::before {
 }
 
 .search__input::before {
-    content:url(./img/icons/other/search.svg);
+    content: url(./img/icons/other/search.svg);
     position: absolute;
     top: 11px;
     right: 22px;
@@ -249,39 +249,95 @@ li::before {
     outline: none;
 }
 
-.search__transactions::placeholder{
+.search__transactions::placeholder {
     font-size: 16px;
     font-weight: 400;
     color: #1C1D21;
     opacity: 0.5;
 }
 
-.main__balance {
-    border: 2px solid rgb(107, 31, 31);
+.main__balance {}
+
+.main__balance>h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    margin: 0 0 14px 0;
 }
 
 .balance__text {
-    border: 2px solid rgb(139, 105, 105);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #1B224A;
+    opacity: 0.4;
+}
+
+.balance__arr {
+    padding: 0 0 1px 9px;
+    cursor: pointer;
 }
 
 .balance__wallet {
-    border: 2px solid rgb(51, 39, 39);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    color: #1B224A;
+    margin: 16px 0 8px 0;
+}
+
+.balance__wallet>span {
+    color: #0066FE;
 }
 
 .wallet__id {
-    border: 2px solid rgb(29, 159, 168);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #1B224A;
+    opacity: 0.4;
+    margin-bottom: 25px;
 }
 
 .btn__deposit {
-    border: 2px solid rgb(74, 206, 188);
+    background: #1C1D21;
+    border: none;
+    border-radius: 10px;
+    width: 175px;
+    height: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.btn__deposit:active {
+    outline: 1px solid #ffffff;
+    transform: scale(0.99);
 }
 
 .btn__withdraw {
-    border: 2px solid rgb(0, 89, 255);
+    background: #F3F5F9;
+    border: none;
+    border-radius: 10px;
+    width: 175px;
+    height: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #1C1D21;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.btn__withdraw:active {
+    outline: 1px solid #cdcdce;
+    transform: scale(0.99);
 }
 
 .transactions__wrapper {
-    border: 2px solid rgb(0, 132, 255);
     width: 100%;
     max-width: 600px;
     height: 380px;
@@ -289,78 +345,298 @@ li::before {
 }
 
 .transactions__text {
-    border: 2px solid rgb(206, 164, 164);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
 }
 
-.transactions__table {
-    border: 2px solid rgb(0, 204, 255);
+.transactions__text>p:first-child {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 33px;
+    margin: 0;
+}
+
+.transactions__text>p:last-child {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0;
+}
+
+.transactions__text>p:last-child>img {
+    padding: 0 0 1px 9px;
+    cursor: pointer;
 }
 
 
+.table {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
 
+.table__head>p {
+    margin: 0;
+}
 
+.item__table>p {
+    margin: 0;
+}
 
+.table__head {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 1fr;
+    color: #687D8C;
+    opacity: 0.6;
+    margin-bottom: 24px;
+}
 
+.item__table {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 1fr;
+}
+
+.table__span-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.table__span-text>span:nth-child(1) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.table__span-text>span:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    opacity: 0.4;
+}
+
+.table__text-color {
+    color: #34C759;
+}
+
+.item__table:last-child>p:last-child {
+    color: #FF6B6B;
+}
 
 
 
 /* <||| --  Третій блок  -- |||> */
 
 
+
 .wallet__info {
     width: 100%;
     max-width: 390px;
-    border: 2px solid red;
+
+}
+
+.wallet__card {
+    min-width: 390px;
+    height: 247px;
+    background-image: url(./img/card.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quick__transfer {}
+
+.quick__text {
+    display: flex;
+    justify-content: space-between;
+    /* font-size: 24px; */
+    font-weight: 600;
+    line-height: 31px;
+}
+
+.quick__id {
+    background-color: #F3F5F9;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    opacity: 0.5;
+    margin: 28px 0 16px 0;
+    padding: 20px;
+}
+
+.summ_wrapper {
+    margin: 28px 0 16px 0;
+}
+
+.summ_wrapper>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.summ__transactions {
+    width: 220px;
+    background-color: #F9FAFC;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    padding: 20px;
+    margin: 0;
+}
+
+.choice-currency {
+    max-width: 150px;
+    height: 72px;
+    background-color: #F9FAFC;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 16px 10px 16px;
+}
+
+.choice-currency>img {
+    align-self: flex-start;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.currency__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 0.6;
+    margin: 0;
+}
+
+.currency__click {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0;
+    opacity: 1;
+}
+
+.btn__transfer {
+    margin: 32px 0 51px 0;
+}
+
+.btn__submit {
+    background: #1C1D21;
+    border: none;
+    border-radius: 10px;
+    width: 175px;
+    height: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.btn__submit:active {
+    outline: 1px solid #ffffff;
+    transform: scale(0.99);
+}
+
+.btn__save {
+    background: #F3F5F9;
+    border: none;
+    border-radius: 10px;
+    width: 175px;
+    height: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #1C1D21;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.btn__save:active {
+    outline: 1px solid #cdcdce;
+    transform: scale(0.99);
 }
 
 
 
 
 
-
-
-.wallet__info {}
-
-.wallet__card {}
-
-.card__name {}
-
-.card__info {}
-
-.card__number {}
-
-.card__data {}
-
-.quick__transfer {}
-
-.quick__text {}
-
-.quick__id {}
-
-.summ_wrapper {}
-
-.summ__transactions {}
-
-.choice-currency {}
-
-.currency__text {}
-
-.currency__click {}
-
-.btn__transfer {}
-
-.btn__submit {}
-
-.btn__save {}
-
 .transfers__history {}
 
-.transfers__item {}
+.transfers__history>h3 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 33px;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.transfers__text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.transfers__text> :nth-child(1) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.4;
+    margin: 0;
+}
+
+.transfers__text p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0;
+}
+
+.transfers__text p:nth-child(2)>img {
+    padding: 0 0 1px 5px;
+    cursor: pointer;
+}
+
+.transfers__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .transfers__info-history {}
 
-.transfers__id {}
+.transfers__id {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0;
+}
 
-.transfers__data {}
+.transfers__data {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    opacity: 0.3;
+    margin: 0;
+}
 
-.transfers__summ-history {}
+.transfers__summ-history {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0;
+}
+
+hr {
+    border: 1px solid #EFEFF5;
+    margin: 16px 0;
+}
